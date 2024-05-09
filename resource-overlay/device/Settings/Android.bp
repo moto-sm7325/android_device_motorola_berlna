@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "SettingsResBerlna",
-    vendor: true
+    vendor: true,
 }
