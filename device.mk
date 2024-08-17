@@ -53,14 +53,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    libgui_shim_vendor
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.berlna \
-    com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
 $(foreach f,$(wildcard $(LOCAL_PATH)/configs/idc/*.idc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/usr/idc/$(notdir $f)))
@@ -90,13 +85,9 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2.vendor \
     android.hardware.nfc@1.2-service.st \
-    android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
-    libchrome.vendor \
-    Tag \
-    nfc_nci.st21nfc.default
+    Tag
 
 # Permissions
 PRODUCT_COPY_FILES += \
