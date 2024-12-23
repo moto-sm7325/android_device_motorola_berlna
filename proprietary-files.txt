@@ -29,9 +29,9 @@ vendor/lib/libc++_shared.so
 vendor/lib64/libacdbloader.so
 
 # Audio - soundfx
-vendor/lib/soundfx/libbc360.so
+vendor/lib/soundfx/libbc360.so;FIX_SONAME
 vendor/lib/soundfx/libmaxxeffect-cembedded.so
-vendor/lib64/soundfx/libbc360.so
+vendor/lib64/soundfx/libbc360.so;FIX_SONAME
 
 # Camera
 vendor/lib/libcamxexternalformatutils.so
