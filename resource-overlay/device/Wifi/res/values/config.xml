@@ -6,6 +6,6 @@
 <resources>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Motorola Edge (2021)</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">moto edge (2021)</string>
 
 </resources>
