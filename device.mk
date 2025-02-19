@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.berlna
+    android.hardware.lights-service.lineage
 
 # NFC
 PRODUCT_PACKAGES += \
