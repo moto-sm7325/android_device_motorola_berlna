@@ -50,6 +50,7 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/configs/keylayout/*.kl),\
 
 # Init
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
     init.ets.rc \
     init.mmi.overlay.rc \
     init.recovery.berlna.rc \
