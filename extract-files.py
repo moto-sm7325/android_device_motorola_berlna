@@ -39,6 +39,13 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libmot_chi_desktop_helper.so', 'vendor/lib64/libmot_chi_desktop_helper.so'): blob_fixup()
         .add_needed('libgui_shim_vendor.so'),
+    (
+        'vendor/lib64/camera/components/com.mot.node.c2d.so',
+        'vendor/lib64/camera/components/com.qti.node.dewarp.so',
+        'vendor/lib64/camera/components/com.vidhance.node.ica.so',
+        'vendor/lib64/camera/components/com.vidhance.node.processing.so'
+    ): blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     'vendor/lib64/sensors.moto.so': blob_fixup()
         .add_needed('libbase_shim.so'),
 }  # fmt: skip
