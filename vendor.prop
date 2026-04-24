@@ -1,6 +1,7 @@
 # Audio
 persist.vendor.media.recorder.bt709=true
 persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.speaker.stereo=false
 persist.vendor.audio_fx.current=waves
 persist.vendor.audio_fx.waves.maxxsense=true
 persist.vendor.audio_fx.waves.proc_twks=true
