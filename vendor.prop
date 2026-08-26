@@ -15,6 +15,3 @@ persist.vendor.camera.physical.num=4
 
 # NFC
 persist.vendor.nfc.st.multisim_fw_config=true
-
-# Radio
-ro.telephony.default_network=27,27
